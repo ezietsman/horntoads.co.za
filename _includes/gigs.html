@@ -8,18 +8,37 @@
                     <hr class="star-primary">
                 </div>
             </div>
+            <h3>Upcoming shows</h3>
             {% for gig in site.gigs reversed%}
-            <div class="row gig-entry">
-                <div class="col-sm-2 portfolio-item">
-                    {{ gig.date | date_to_string }} {{ gig.starttime }}
+                {% if gig.date >= site.time | date %}
+                <div class="row gig-entry">
+                    <div class="col-sm-2 portfolio-item">
+                        {{ gig.date | date_to_string }} {{ gig.starttime }}
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        {{ gig.venue }}
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        {{ gig.description }}
+                    </div>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    {{ gig.venue }}
+                {% endif %}
+            {% endfor %}
+            <h3>Past shows</h3>
+            {% for gig in site.gigs reversed%}
+                {% if gig.date < site.time | date %}
+                <div class="row gig-entry">
+                    <div class="col-sm-2 portfolio-item">
+                        {{ gig.date | date_to_string }} {{ gig.starttime }}
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        {{ gig.venue }}
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        {{ gig.description }}
+                    </div>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    {{ gig.description }}
-                </div>
-            </div>
+                {% endif %}
             {% endfor %}
         </div>
     </section>

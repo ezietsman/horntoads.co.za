@@ -10,16 +10,10 @@
             </div>
             <div class="row">
                 {% for member in site.members %}
-                    <div class="col-sm-4 col-sm-offset-1 portfolio-item">
-                        <a href="#portfolioModal-{{ member.modal-id }}" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-1x"></i>
-                                </div>
-                            </div>
-                            <img src="img/members/{{ member.img }}" class="img-responsive" alt="{{ member.alt }}">
-                        </a>
-                    </div>
+                <div class="col-sm-3 portfolio-item">
+                    <img src="img/members/{{ member.img }}" class="img-responsive" alt="{{ member.alt }}">
+                    <p>{{ member.description }}</p>
+                </div>
                 {% endfor %}
             </div>
         </div>
