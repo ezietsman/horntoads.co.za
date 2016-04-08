@@ -1,0 +1,25 @@
+
+    <!-- Portfolio Grid Section -->
+    <section id="gigs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Gigs</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            {% for gig in site.gigs reversed%}
+            <div class="row gig-entry">
+                <div class="col-sm-2 portfolio-item">
+                    {{ gig.date | date_to_string }} {{ gig.starttime }}
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    {{ gig.venue }}
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    {{ gig.description }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>

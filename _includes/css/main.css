@@ -103,9 +103,13 @@ header .intro-text .name {
     font-weight: 700;
 }
 
-header .intro-text .skills {
+header .intro-text .skills, .row.gig-entry{
     font-size: 1.25em;
     font-weight: 300;
+}
+
+.row.gig-entry {
+    padding-bottom: 2em;
 }
 
 @media(min-width:768px) {
