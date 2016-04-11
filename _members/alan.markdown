@@ -7,5 +7,5 @@ alt: Picture of Alan Millar, Vocalist
 project-date: April 2016
 client: The Horn Toads
 category: Members
-description: Alan Millar. Vocals. Guitar.
+description: Alan Millar &mdash; vocals, guitars
 ---

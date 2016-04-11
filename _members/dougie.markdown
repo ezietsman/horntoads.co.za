@@ -7,5 +7,5 @@ alt: Picture of Dougie Elliot. Drummer.
 project-date: April 2016
 client: The Horn Toads
 category: Members
-description: Dougie Elliot. Drums. Vocals.
+description: Dougie Elliot &mdash; drums, vocals
 ---

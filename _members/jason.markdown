@@ -7,5 +7,5 @@ alt: Picture of Jason Coetzee. Bass guitarist.
 project-date: April 2016
 client: The Horn Toads
 category: Members
-description: Jason Coetzee. Bass guitar.
+description: Jason Coetzee &mdash; bass guitar
 ---

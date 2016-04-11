@@ -7,5 +7,5 @@ alt: Picture of Ewald Zietsman. Guitarist.
 project-date: April 2016
 client: The Horn Toads
 category: Members
-description: Ewald Zietsman. Guitar.
+description: Ewald Zietsman &mdash; guitars
 ---
