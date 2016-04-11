@@ -1,6 +1,6 @@
 ---
 layout: default
-venue: Tiekiedraai
+venue: Warlords MCC
 date: 2016-04-09
 starttime: "18:30"
 img: alan.jpg
