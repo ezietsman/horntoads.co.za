@@ -12,14 +12,14 @@
             {% for gig in site.gigs reversed%}
                 {% if gig.date >= site.time | date %}
                 <div class="row gig-entry">
-                    <div class="col-sm-2 portfolio-item">
-                        {{ gig.date | date_to_string }} {{ gig.starttime }}
+                    <div class="col-sm-3 portfolio-item">
+                        {{ gig.date | date_to_string }}, {{ gig.starttime }}
                     </div>
                     <div class="col-sm-4 portfolio-item">
-                        {{ gig.venue }}
+                        {{ gig.venue | markdownify }}
                     </div>
                     <div class="col-sm-4 portfolio-item">
-                        {{ gig.description }}
+                        {{ gig.description | markdownify }}
                     </div>
                 </div>
                 {% endif %}
@@ -28,14 +28,14 @@
             {% for gig in site.gigs reversed%}
                 {% if gig.date < site.time | date %}
                 <div class="row gig-entry">
-                    <div class="col-sm-2 portfolio-item">
+                    <div class="col-sm-3 portfolio-item">
                         {{ gig.date | date_to_string }} {{ gig.starttime }}
                     </div>
                     <div class="col-sm-4 portfolio-item">
-                        {{ gig.venue }}
+                        {{ gig.venue | markdownify }}
                     </div>
                     <div class="col-sm-4 portfolio-item">
-                        {{ gig.description }}
+                        {{ gig.description | markdownify }}
                     </div>
                 </div>
                 {% endif %}
