@@ -1,6 +1,6 @@
 ---
 layout: default
-venue:  "[The Sound Studio](https://www.facebook.com/The-Sound-Studio-109947845748411/), Sanlam Business Park, Unit 39A, Corner of Racecource rd and Koeberg rd."
+venue:  "[The Sound Studio](https://www.facebook.com/The-Sound-Studio-109947845748411/), Sanlam Business Park, Unit 39A, Corner of Racecourse road and Koeberg road."
 date: 2016-05-07
 starttime: "20:00"
 img: alan.jpg
