@@ -64,3 +64,6 @@ permalink: pretty
 collections:
  - members
  - gigs
+
+gems:
+- jekyll-sitemap
